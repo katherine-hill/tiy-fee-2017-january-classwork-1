@@ -1,0 +1,35 @@
+body {
+  background: #eee;
+  padding: 25px;
+}
+
+.dragon-pic {
+  border: 1px double red;
+
+/*
+This is the shorthand version of the border property */
+
+
+  /*border-color: red;
+  border-style: double;
+  border-width: 1px;*/
+
+  width: 225px;
+}
+
+#smaug {
+  width: 300px;
+}
+
+h1 {
+  color: green;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.footer-text {
+  font-style: italic;
+  font-size: 10px;
+}
