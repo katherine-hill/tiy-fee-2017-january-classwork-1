@@ -1,0 +1,25 @@
+body {
+  background: #efefef;
+}
+
+header {
+  text-align: center;
+}
+
+header .logo {
+  width: 115px;
+}
+
+footer .logo {
+  width: 30px;
+}
+
+tr:first-child {
+  background: #ccc;
+}
+tr:last-child {
+  background: #aaa;
+}
+tr:focus {
+  color: red;
+}
