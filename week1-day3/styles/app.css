@@ -1,0 +1,128 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+header {
+  background: url('http://i.huffpost.com/gen/2681096/images/o-VINCE-VAUGHN-STOCK-PHOTO-facebook.jpg') #ff0000;
+  background-size: cover;
+  height: 350px;
+  padding: 25px;
+  position: relative;
+}
+
+button {
+  background: #333;
+  border: 2px solid black;
+  bottom: 95px;
+  color: #a00;
+  /*left: 90%;*/
+  padding: 5px 25px;
+  position: relative;
+  right: 190px;
+  /*top: 175px;*/
+}
+
+
+nav {
+  background: grey;
+  overflow: hidden;
+  padding: 10px;
+}
+
+ul {
+  float: right;
+  list-style: none;
+}
+
+li {
+  float: left;
+  padding: 10px;
+}
+
+li:hover {
+  background: #efefef;
+  cursor: pointer;
+}
+
+.products {
+  background: #333;
+  overflow: hidden;
+}
+
+.products-container {
+  margin: 0 auto;
+  width: 480px; /* (150 + 10) * 3 */
+}
+
+.product {
+  background: #900;
+  border-radius: 5px;
+  color: #fff;
+  float: left;
+  height: 250px;
+  margin: 10px 5px;
+  padding: 10px 25px;
+  text-align: center;
+  width: 150px;
+}
+
+
+
+
+
+
+
+
+/*
+.box {
+  background: #eee;
+  border: 1px solid red;
+  margin: 10px;
+  padding: 10px;
+}
+
+.box:first-child {
+  width: 500px;
+}
+.inner-container {
+  background: blue;
+  margin: 5px;
+  padding: 10px;
+  width: 250px;
+}
+
+p:first-letter {
+  font-size: 35px;
+}
+
+.has-spacer:before, .has-spacer:after {
+  background: purple;
+  content: '';
+  display: block;
+  height: 2px;
+  margin: 25px 0;
+  width: 100px;
+}
+
+.border-spacer {
+  border-bottom: 2px solid green;
+  padding-bottom: 25px;
+}
+
+.rank:before {
+  content: '#';
+}
+
+#hooplah {
+  font-size: 32px;
+}
+
+
+.not-so-important {
+  font-size: 10px;
+}
+
+.mega-important {
+  color: red;
+  font-size: 22px;
+}*/
