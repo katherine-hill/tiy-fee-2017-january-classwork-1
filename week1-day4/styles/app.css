@@ -1,0 +1,199 @@
+body {
+  background: #000;
+}
+
+.movie-container {
+  border: 1px solid #999;
+  margin: 25px auto;
+  overflow: hidden;
+  position: relative;
+  width: 220px;
+}
+
+.image-container {
+  height: 220px;
+  overflow: scroll;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+footer {
+  background: #eee;
+  border-top: 3px solid #900;
+  overflow: hidden;
+}
+
+.item {
+  float: left;
+  padding: 5px;
+  text-align: center;
+  width: 50%;
+}
+
+.item:first-of-type {
+  border-right: 1px solid #000;
+}
+
+.item:nth-child(2):hover > .description {
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+.description {
+  background: rgba(140,0,0,.75);
+  color: #fff;
+  height: 220px;
+  left: 0;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  transform: translate(-220px,0);
+  transition: opacity .75s ease, transform .25s ease-out;
+  width: 220px;
+}
+
+input[type=checkbox] {
+  height: 25px;
+  outline: 6px solid red;
+  width: 25px;
+}
+
+input[type=checkbox]:checked {
+  outline: 6px solid blue;
+}
+
+input[type=checkbox].special:checked {
+  outline: 6px solid green;
+}
+
+button {
+  transition: all 1s ease;
+}
+
+input[type=checkbox]:checked + button {
+  background: purple;
+  padding: 25px;
+}
+
+
+.hatchet-container {
+  text-align: center;
+}
+
+.hatchet {
+    animation: spin 2s linear infinite;
+    transform-origin: top left;
+}
+
+@keyframes spin {
+  25% {
+    transform: scale(2) rotate(0);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+
+.logo-container {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 400px;
+}
+
+.logo-container:hover:after {
+  animation: line 2s ease infinite;
+}
+
+.logo-container:after {
+  background: #900;
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+}
+
+@keyframes line {
+  50% {
+    width: 100%;
+    transform: translateX(0);
+  }
+  100% {
+    width: 100%;
+    transform: translateX(100%);
+  }
+}
+
+.z-test {
+  background: red;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+}
+.z-test:first-child {
+  background: green;
+  left: 10px;
+  top: 10px;
+  z-index: 5;
+}
+.z-test:nth-child(2) {
+  background: blue;
+  left: 20px;
+  top: 20px;
+  z-index: 10;
+}
+
+
+li {
+  color: #fff;
+  display: block;
+  padding: 5px;
+  position: relative;
+  width: 300px;
+}
+
+li:hover .list-description {
+  animation: list 2s ease;
+}
+
+.list-description {
+  background: #cfcfcf;
+  left: 0;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  width: 250px;
+}
+
+@keyframes list {
+  10%, 72% {
+    opacity: 1;
+    background: rgba(140,0,0,.75);
+    transform: translateX(0);
+  }
+  52% {
+    transform: translateX(100%);
+  }
+  100% {
+    background: rgba(255,255,255,.5);
+    transform: translateX(0);
+  }
+}
+
+
+.absolute-center {
+  background: red;
+  color: #fff;
+  height: 150px;
+  left: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-175px, -75px); /* Half of element width */
+  width: 350px;
+}
