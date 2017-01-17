@@ -1,0 +1,151 @@
+body {
+  font-size: 16px;
+  line-height: 1.5; /* 16 x 1.5 = 24 */
+}
+
+img {
+  border: 0;
+  height: auto;
+  max-width: 550px;
+  width: 100%;
+}
+
+header {
+  background: url(http://wallup.net/wp-content/uploads/2016/05/24/374084-nature-landscape-trees-forest-winter-snow-evening-lights-igloo-hotel-modern-pine_trees-glass-bed-Lapland-Finland-romantic.jpg) no-repeat #000;
+  background-size: cover;
+  height: 35vh;
+}
+
+nav {
+  background: #000;
+}
+
+ul {
+  float: right;
+}
+
+li {
+  color: #fff;
+  float: left;
+  padding: 10px 15px;
+}
+
+main {
+  overflow: hidden;
+  padding: 10px 20px;
+}
+
+section {
+  border: 1px solid red;
+}
+aside {
+  border: 1px solid #000;
+}
+
+h1 {
+  font: 2rem/2.25rem 'verdana', sans-serif;
+}
+
+p {
+  font: 1rem/1.5rem 'verdana', sans-serif;
+  margin-top: 10px;
+}
+
+.something-container {
+  max-width: 700px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.something-container footer {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+}
+
+.something-container img {
+  max-width: 100%;
+}
+
+.something-to-show {
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+}
+
+.something-container footer:hover + .something-to-show {
+  opacity: 1;
+  height: 200px;
+  background: red;
+  visibility: visible;
+  transform: translateY(-30px);
+}
+
+@media screen and (min-width: 320px) {
+  nav {
+    bottom: 5%;
+    left: 5%;
+    height: 50px;
+    overflow: visible;
+    position: fixed;
+    width: 50px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav:hover ul {
+    background: #000;
+    bottom: 10%;
+    display: block;
+    left: 5%;
+    position: absolute;
+  }
+
+  section, aside {
+    float: none;
+    width: 100%;
+  }
+
+  .mobile-toggle {
+    color: #fff;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  section {
+    float: left;
+    width: 80%;
+  }
+  aside {
+    float: right;
+    margin-left: 15px;
+    width: calc(20% - 15px);
+  }
+
+  nav {
+    height: auto;
+    overflow: hidden;
+    position: static;
+    width: 100%;
+  }
+
+  nav:hover ul {
+    position: static;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  .mobile-toggle {
+    display: none;
+  }
+}
