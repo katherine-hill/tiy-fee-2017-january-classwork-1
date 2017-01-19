@@ -1,0 +1,79 @@
+$colors: #01DD48, #FD7B01, #2312FF, #FF1C03, #EFDE1E, #FF23FF;
+$opensans: 'Open Sans', sans-serif;
+$slab: 'Slabo 27px', serif;
+
+body {
+    background: url('../images/texture.png') #222;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #fff;
+    font: 3rem/5rem $opensans;
+    text-align: center;
+    text-transform: uppercase;
+
+    span {
+        font-family: $slab;
+    }
+}
+
+.container {
+    height: 283px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+    width: 1200px;
+}
+
+.character {
+    border: 3px solid #000;
+    float: left;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    transition: border 0.5s ease;
+    width: 200px;
+
+    @each $current-color in $colors {
+        $index: index($colors, $current-color) + 1;
+
+        &:nth-child(#{$index}):hover {
+            border: 3px solid $current-color;
+        }
+    }
+
+    span {
+        background: rgba(0,0,0,0);
+        color: #fff;
+        font: 2rem/2 $opensans;
+        position: absolute;
+        text-align: center;
+        top: -50%;
+        transform: translateY(0);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+        width: 100%;
+        z-index: 2;
+    }
+
+    .headshot {
+        height: auto;
+        transition: transform 1s ease;
+        width: 100%;
+    }
+
+    &:hover {
+        span {
+            background: rgba(0,0,0,.75);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .headshot {
+            transform: scale(1.25);
+        }
+    }
+}

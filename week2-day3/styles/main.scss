@@ -1,0 +1,104 @@
+@import 'partials/reset';
+@import 'partials/mixins';
+@import 'partials/variables';
+@import 'partials/common';
+@import 'partials/bourbon';
+
+.test {
+    @include vcenter;
+    @include border-radius(10%);
+    height: 200px;
+    position: absolute;
+    width: 100px;
+}
+
+body {
+    // @include gradient(orange, green);
+}
+
+h1 {
+    color: $primary;
+    font: 3rem/5rem $primaryFont;
+    text-align: center;
+    text-transform: uppercase;
+
+    span {
+        font-family: $secondaryFont;
+    }
+}
+
+h2 {
+    @extend .hooplah;
+    color: #000;
+}
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+    @include bp(mobile) {
+        width: 96%;
+    }
+    @include bp(full) {
+        height: 283px;
+        max-width: 1200px;
+        width: 100%;
+    }
+}
+
+.character {
+    border: 3px solid #000;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    transition: border 0.5s ease;
+    @include bp(mobile) {
+        height: auto;
+        width: calc(100% / 3);
+    }
+    @include bp(medium) {
+        width: calc(100% / 6);
+    }
+    @include bp(full) {
+        height: 200px;
+        width: 200px;
+    }
+    @each $current-color in $colors {
+        $index: index($colors, $current-color);
+
+        &:nth-of-type(#{$index}):hover {
+            border: 3px solid $current-color;
+        }
+    }
+
+    span {
+        background: rgba(0,0,0,0);
+        color: $primary;
+        font: 2rem/2 $primaryFont;
+        position: absolute;
+        text-align: center;
+        top: -50%;
+        transition: all 0.5s ease;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .headshot {
+        display: block;
+        transition: transform 1s cubic-bezier(.17,.89,.82,1.11);
+    }
+
+    &:hover {
+        span {
+            background: rgba(0,0,0,.75);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .headshot {
+            transform: scale(1.25);
+        }
+    }
+}
