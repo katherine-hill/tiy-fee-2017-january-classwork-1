@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome to JavaScript</title>
+        <link rel="stylesheet" href="styles/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Arsenal|Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <h1>JavaScript Intro</h1>
+        <h2>Strings</h2>
+        <section class="example strings is-flex">
+            <div class="item input-container">
+                <h3 class="has-spacer">Hello, Sydney.</h3>
+                <span>What's your favorite scary movie?</span>
+                <form class="form-one">
+                    <label class="is-hidden" for="movie-title">Movie Title</label>
+                    <input type="text" id="movie-title" placeholder="Movie Title">
+                    <input type="submit" value="Answer">
+                </form>
+            </div>
+            <div class="item output-container"></div>
+        </section>
+        <h2>Numbers</h2>
+        <section class="example numbers is-flex">
+            <div class="item input-container">
+                <form class="form-two">
+                    <label for="num-1">Number 1</label>
+                    <input type="number" id="num-1" max="100">
+                    <label for="num-2">Number 2</label>
+                    <input type="number" id="num-2" max="100">
+                    <input type="submit" value="Compare Values">
+                </form>
+            </div>
+            <div class="item output-container"></div>
+        </section>
+
+        <h2>Boolean</h2>
+        <section class="example booleans is-flex">
+            <div class="item input-container">
+                <form class="form-three">
+                    <div class="form-container">
+                        <div class="input-container">
+                            <label for="show-one">Show One</label>
+                            <select id="show-one">
+                              <option>House of Cards</option>
+                              <option>Stranger Things</option>
+                              <option>Vikings</option>
+                            </select>
+                        </div>
+                        <div class="input-container is-centered">
+                            <span class="is-strong">===</span>
+                        </div>
+                        <div class="input-container">
+                            <label for="show-two">Show Two</label>
+                            <select id="show-two">
+                              <option>House of Cards</option>
+                              <option>Stranger Things</option>
+                              <option>Vikings</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="submit" value="Check Answer">
+                </form>
+            </div>
+            <div class="item output-container">
+                <h3 class="has-spacer"></h3>
+                <span></span>
+            </div>
+        </section>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>

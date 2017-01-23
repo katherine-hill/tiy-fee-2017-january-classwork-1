@@ -7,3 +7,4 @@ This repo was created to centralize all code examples built in class during the 
 - [Week 1 - Day 4](week1-day4) - CSS Transitions and Animations
 - [Week 2 - Day 1](week2-day1) - Responsive Design, CSS sizing units
 - [Week 2 - Day 3](week2-day3) - Sass
+- [Week 3 - Day 1](week3-day1) - JavaScript - Strings, Numbers, Booleans, Conditionals, and More! (oh my!)

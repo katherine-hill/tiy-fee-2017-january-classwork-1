@@ -1,0 +1,24 @@
+input[type=text] {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+input[type=number], select {
+    @extend input[type=text];
+    display: block;
+}
+
+input[type=submit] {
+    @extend input[type=text];
+    background: #600;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.25s ease;
+
+    &:hover {
+        background: lighten(#600, 5%);
+    }
+}
