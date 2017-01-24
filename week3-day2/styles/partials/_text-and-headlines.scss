@@ -4,3 +4,12 @@ h1 {
     line-height: 3;
     text-transform: uppercase;
 }
+
+.show-all {
+  cursor: pointer;
+  text-align: right;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

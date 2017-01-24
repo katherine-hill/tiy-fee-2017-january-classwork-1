@@ -1,13 +1,13 @@
 console.clear();
 "use strict";
 
-console.clear();
 const navItems = document.querySelectorAll('.main-nav li');
 const allPanels = document.querySelectorAll('.add-container, .search-container');
 const addForm = document.querySelector('.add-form');
 const searchForm = document.querySelector('.search-form');
 const totalEl = document.querySelector('.total-contacts');
 const results = document.querySelector('.results-container');
+const showAll = document.querySelector('.show-all');
 let contacts = [{
     name: 'Tom',
     cell: '919-918-2774',
@@ -57,9 +57,7 @@ function searchContacts(value) {
 function displayResults(data) {
     let content = '';
     const contactContainer = document.createElement('div');
-    contactContainer.className = "result-container";
-
-    console.log(data);
+    contactContainer.className = "result-container has-spacer";
 
     for (let key in data) {
         content += `<p><span>${key}: </span>${data[key]}</p>`;
@@ -67,9 +65,18 @@ function displayResults(data) {
 
     contactContainer.innerHTML = content;
 
-    results.innerHTML = '';
     results.appendChild(contactContainer);
 
+}
+
+function displayAllContacts() {
+    for (let index = 0; index < contacts.length; index++) {
+        displayResults(contacts[index]);
+    }
+}
+
+function clearResults() {
+    results.innerHTML = '';
 }
 
 for (let item of navItems) {
@@ -93,12 +100,18 @@ searchForm.addEventListener('submit', () => {
     const searchName = event.target[0].value;
     const foundUser = searchContacts(searchName);
 
+    clearResults();
+
     if (foundUser) {
         displayResults(foundUser);
     } else {
         results.innerHTML = 'No Match Found';
     }
+});
 
+showAll.addEventListener('click', () => {
+    clearResults();
+    displayAllContacts();
 });
 
 updateTotalCount();
