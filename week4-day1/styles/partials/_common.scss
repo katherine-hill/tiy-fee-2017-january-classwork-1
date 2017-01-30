@@ -1,0 +1,13 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Pavanam', sans-serif;
+    padding: 25px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
