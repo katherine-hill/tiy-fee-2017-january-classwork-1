@@ -10,4 +10,5 @@ This repo was created to centralize all code examples built in class during the 
 - [Week 3 - Day 1](week3-day1) - JavaScript - Strings, Numbers, Booleans, Conditionals, and More! (oh my!)
 - [Week 3 - Day 3](week3-day3) -
 - [Week 3 - Day 4](week3-day4) -
-- [Week 4 - Day 1](week4-day1) - JavaScript Constructors, Prototypes, and Classes 
+- [Week 4 - Day 1](week4-day1) - JavaScript Constructors, Prototypes, and Classes
+- [Week 4 - Day 2](week4-day2) - JavaScript Module Patterns and Classes (Revisit) 
