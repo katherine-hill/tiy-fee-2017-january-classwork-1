@@ -328,3 +328,52 @@
 // }).catch(function(error) {
 //     console.log(error);
 // });
+
+
+
+
+/* ------------------------------------------- */
+/*  JAVASCRIPT INTRO TO ASYNC - SETUP IN CLASS */
+/* ------------------------------------------- */
+// let test = 0;
+// for (let i = 0; i < 5; i++) {
+//     test += i;
+// }
+// console.log(test);
+
+// AJAX = Asyncrhonous JavaScript and XML
+//
+// JSON = JavaScript Object Notation
+
+// 0: Request Not Initialized
+// 1: Request Has Been Set Up
+// 2: Request Has Been Sent
+// 3: Request is in Process
+// 4: Request is Complete
+
+// 200: Okay
+// 3xx: Redirects
+// 4xx: Client Errors
+// 400: Bad Request
+// 401: Unauthorized
+// 403: Forbidden
+// 404: Not Found
+// 5xx: Server Errors
+// 500: Internal Server Error
+
+// let http = new XMLHttpRequest();
+// let dogsObj = 'dogs';
+// http.onreadystatechange = function() {
+//     if (http.readyState === 4 && http.status === 200) {
+//         // console.log(JSON.parse(http.response));
+//         dogsObj = JSON.parse(http.response);
+//         console.log(dogsObj.dogs);
+//     } else if (http.readyState === 4 && http.status >= 300) {
+//         console.log('Whoops! Errors!');
+//     }
+// }
+// http.open('GET', './data/dogs.json', true);
+// http.send();
+// })();
+// rue);
+// http.send();

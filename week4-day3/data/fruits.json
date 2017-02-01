@@ -1,10 +1,11 @@
 {
-  "fruits": [
-    {
-      "type": "Apple"
-    },
-    {
-      "type": "Pear"
-    }
-  ]
+    "fruits": [{
+            "type": "Apple",
+            "delicious": "Very"
+        },
+        {
+            "type": "Pear",
+            "delicious": "Meh"
+        }
+    ]
 }
