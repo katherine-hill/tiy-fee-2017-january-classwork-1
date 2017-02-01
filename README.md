@@ -12,3 +12,4 @@ This repo was created to centralize all code examples built in class during the 
 - [Week 3 - Day 4](week3-day4) - JavaScript Object Literal Notation
 - [Week 4 - Day 1](week4-day1) - JavaScript Constructors, Prototypes, and Classes
 - [Week 4 - Day 2](week4-day2) - JavaScript Module Patterns and Classes (Revisit)
+- [Week 4 - Day 3](week4-day3) - Intro to Async JavaScript and JSON
