@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="styles/app.css">
     </head>
     <body>
-        <div class="loading-container">
+        <div class="loading-container is-hidden">
             <div class="loading-icon">
                 <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
                   <path opacity="1" fill="#090" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
@@ -27,14 +27,14 @@
         <div class="container">
             <header>
                 <img src="http://www.iconarchive.com/download/i47278/avosoft/warm-toolbar/world.ico" alt="World Icon">
-                <h1> Do You Even Geology, Bro?</h1>
+                <h1>Do You Even Geography, Bro?</h1>
                 <img src="http://www.iconarchive.com/download/i47278/avosoft/warm-toolbar/world.ico" alt="World Icon">
             </header>
-            <section class="begin-container is-hidden">
+            <section class="begin-container">
                 <button class="start-btn">Begin Game</button>
                 <p>Name the country's capital. Or else....</p>
             </section>
-            <section class="question-container">
+            <section class="question-container is-hidden">
                 <span>What is the capital of</span>
                 <h2 class="country-headline">???</h2>
                 <form autocomplete="off" class="guess-form">
@@ -42,7 +42,7 @@
                     <input type="submit" value="Guess">
                 </form>
             </section>
-            <section class="results-container">
+            <section class="results-container is-hidden">
                 <h3 class="result-text"></h3>
                 <h2 class="correct-answer"></h2>
                 <div class="giphy-container"></div>
