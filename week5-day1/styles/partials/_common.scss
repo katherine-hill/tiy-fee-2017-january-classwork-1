@@ -1,0 +1,146 @@
+$primaryColor: #DC5C05;
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+h2 {
+    border-bottom: 1px solid #333;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+body {
+    background: #eee;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background: url("../images/fake-luxury.png") #ddd;
+
+    .row-container {
+        height: 75px;
+
+        img {
+            margin-right: 1rem;
+            width: 75px;
+        }
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 75px;
+}
+
+nav {
+    background: $primaryColor;
+
+    li {
+        color: #000;
+        padding: 0.75rem 1rem;
+        text-transform: uppercase;
+        transition: background 0.25s ease;
+
+        &.active,
+        &:hover {
+            background: lighten($primaryColor, 5%);
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+.content-container {
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 90%;
+}
+
+.is-flex {
+    align-content: center;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+}
+
+.all-dogs-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .dog-container {
+        cursor: pointer;
+        height: 150px;
+        margin: 1rem 0.5rem;
+        min-width: 350px;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.25s ease;
+        width: 45%;
+
+        h3 {
+            background: rgba(0,0,0,.75);
+            bottom: 0.5rem;
+            color: #fff;
+            padding: 0.25rem 0.75rem;
+            position: absolute;
+            right: 0.5rem;
+            text-align: right;
+            text-transform: uppercase;
+            width: 100%;
+        }
+
+        &.abbie {
+            background: url("../images/abbie.jpg") 0 -50px no-repeat;
+            background-size: 100%;
+        }
+
+        &.lagertha {
+            background: url("../images/lagertha.jpg") 0 -70px no-repeat;
+            background-size: 100%;
+        }
+
+        &.sterling {
+            background: url("../images/sterling.jpg") no-repeat;
+            background-size: 100%;
+        }
+
+        &.sigourney {
+            background: url("../images/sigourney.jpg") 0 -50px no-repeat;
+            background-size: 100%;
+        }
+
+        &:hover {
+            background-size: 110%;
+        }
+    }
+}
+
+.dog-details {
+    padding-top: 1rem;
+}
+
+.section-head {
+    background: #ccc;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+.dog-pic-container {
+    text-align: center;
+}

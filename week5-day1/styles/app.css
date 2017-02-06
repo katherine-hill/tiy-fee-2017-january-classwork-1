@@ -1,0 +1,263 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  font: 16px/1.25 "Arsenal", sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%; }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+::-moz-selection {
+  color: #fff;
+  background: #2c3e50; }
+
+::selection {
+  color: #fff;
+  background: #2c3e50; }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+p {
+  margin: 1rem 0; }
+
+h2 {
+  border-bottom: 1px solid #333;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-transform: uppercase; }
+
+body {
+  background: #eee;
+  font-size: 16px;
+  line-height: 1.6; }
+
+header {
+  background: url("../images/fake-luxury.png") #ddd; }
+  header .row-container {
+    height: 75px; }
+    header .row-container img {
+      margin-right: 1rem;
+      width: 75px; }
+
+h1 {
+  font-size: 2rem;
+  line-height: 75px; }
+
+nav {
+  background: #DC5C05; }
+  nav li {
+    color: #000;
+    padding: 0.75rem 1rem;
+    text-transform: uppercase;
+    transition: background 0.25s ease; }
+    nav li.active, nav li:hover {
+      background: #f56606;
+      color: #fff;
+      cursor: pointer; }
+
+.content-container {
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 90%; }
+
+.is-flex {
+  align-content: center;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center; }
+
+.all-dogs-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .all-dogs-container .dog-container {
+    cursor: pointer;
+    height: 150px;
+    margin: 1rem 0.5rem;
+    min-width: 350px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.25s ease;
+    width: 45%; }
+    .all-dogs-container .dog-container h3 {
+      background: rgba(0, 0, 0, 0.75);
+      bottom: 0.5rem;
+      color: #fff;
+      padding: 0.25rem 0.75rem;
+      position: absolute;
+      right: 0.5rem;
+      text-align: right;
+      text-transform: uppercase;
+      width: 100%; }
+    .all-dogs-container .dog-container.abbie {
+      background: url("../images/abbie.jpg") 0 -50px no-repeat;
+      background-size: 100%; }
+    .all-dogs-container .dog-container.lagertha {
+      background: url("../images/lagertha.jpg") 0 -70px no-repeat;
+      background-size: 100%; }
+    .all-dogs-container .dog-container.sterling {
+      background: url("../images/sterling.jpg") no-repeat;
+      background-size: 100%; }
+    .all-dogs-container .dog-container.sigourney {
+      background: url("../images/sigourney.jpg") 0 -50px no-repeat;
+      background-size: 100%; }
+    .all-dogs-container .dog-container:hover {
+      background-size: 110%; }
+
+.dog-details {
+  padding-top: 1rem; }
+
+.section-head {
+  background: #ccc;
+  font-weight: 700;
+  padding: 0.5rem; }
+
+.dog-pic-container {
+  text-align: center; }
+
+.has-spacer:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 1px;
+  margin: 0.25rem 0;
+  width: 100%; }
+
+.is-hidden {
+  display: none; }
+
+.is-flex {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.is-strong {
+  font-weight: 700; }
+
+.is-centered {
+  text-align: center; }
+
+/*# sourceMappingURL=app.css.map */
