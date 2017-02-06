@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NFL - National Fetch League</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles/app.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="row-container is-flex">
+                    <img src="images/logo.png" alt="NFL - National Fetch League">
+                    <h1>NFL - National Fetch League</h1>
+                </div>
+                <nav>
+                    <ul class="is-flex">
+                        <li data-name="abbie">Abbie</li>
+                        <li data-name="lagertha">Lagertha</li>
+                        <li data-name="sterling">Sterling</li>
+                        <li data-name="sigourney">Sigourney</li>
+                    </ul>
+            </header>
+            <main>
+                <div class="content-container">
+                    <!-- Handlebars Templates will go here -->
+                </div>
+            </main>
+        </div>
+
+        <script id="home-template" type="text/x-handlebars-template">
+            <p>Litter Box lazy dog biscuit aquarium run fast field carrier ferret water fetch toys play twine scratcher run fast scratcher. Swimming feeder drool food slobbery shake feathers swimming Scooby snacks paws scratcher. Toy shake ID tag groom window roll over bird food slobbery ball toy park bird food feeder dog wag tail whiskers leash. Fetch small animals vaccination right paw swimming ball tail vaccine birds mouse polydactyl sit treats lick. Bird Seed scratcher kitty water Rover ferret dog fluffy lazy cat play dog house run fast grooming fluffy lol catz teeth critters stick Rover. Cage house train dog house litter sit gimme five Spike grooming kibble throw Snowball bird kisses pet supplies meow fetch licks roll over maine coon cat. Cat Rover treats scratch pet supplies small animals Fido fetch finch fetch critters lazy dog pet supplies toys pet food tail food barky.</p>
+            <h2>Meet The Pups</h2>
+            <section class="all-dogs-container">
+                <div class="dog-container abbie" data-name="abbie">
+                    <h3>Abbie</h3>
+                </div>
+                <div class="dog-container lagertha" data-name="lagertha">
+                    <h3>Lagertha</h3>
+                </div>
+                <div class="dog-container sterling" data-name="sterling">
+                    <h3>Sterling</h3>
+                </div>
+                <div class="dog-container sigourney" data-name="sigourney">
+                    <h3>Sigourney</h3>
+                </div>
+            </section>
+        </script>
+        <script id="dog-template" type="text/x-handlebars-template">
+            <section class="dog-details-container">
+                <h2>{{name}}</h2>
+                <section class="dog-details">
+                    <div class="dog-pic-container">
+                        <img src="{{image}}" alt="{{name}} - National Fetch League">
+                    </div>
+                    <p>{{bio}}</p>
+
+                    <div class="sub-details">
+                        {{#if details}}
+                        <p class="section-head">Details</p>
+                        <ul>
+                            {{#if details.age}}
+                            <li><span>Age: </span>{{details.age}}</li>
+                            {{/if}}
+                            <li><span>Breed: </span>{{details.breed}}</li>
+                            {{#if details.weight}}
+                            <li><span>Weight: </span>{{details.weight}}lbs</li>
+                            {{/if}}
+                        </ul>
+                        {{/if}}
+
+                        <p class="section-head">Toys</p>
+                        <ul>
+                            {{#each toys}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+
+                        <p class="section-head">Hobbies</p>
+                        <ul>
+                            {{#each hobbies}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </script>
+        <script src="js/vendor/jquery-3.1.1.min.js"></script>
+        <script src="js/vendor/handlebars-v4.0.5.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
