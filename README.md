@@ -19,3 +19,5 @@ This repo was created to centralize all code examples built in class during the 
 - [Week 5 - Day 3](week5-day3) - Async jQuery, APIs, and Promises (Finished movie API search)
 - [Week 6 - Day 2](week6-day2) - Gulp, jQuery $.Ajax Revisit
 - [Week 6 - Day 3](week6-day3) - JavaScript Try...Catch, Mocha & Chai Testing
+- [Week 6 - Day 4](week6-day4) - Original Calculator Assignment Backup
+- [Week 7 - Day 1](week7-day1) - Intro to Angular
