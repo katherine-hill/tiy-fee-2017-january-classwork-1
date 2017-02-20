@@ -1,14 +1,19 @@
 angular.module('rosters').service('teamRosters', TeamRosterService);
 
 function TeamRosterService($http) {
-    function fetchTeams() {
+    function getTeams(url) {
         return $http({
             method: 'GET',
-            url: './src/js/data/teams.json'
+            url: url
         });
+
+        // The same as jQuery ajax
+        // $.ajax({
+        //   // settings
+        // });
     }
 
     return {
-        get: fetchTeams
+        get: getTeams
     };
 }
