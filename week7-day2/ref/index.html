@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Woof</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./woofs/list/list.css" />
+  <link rel="stylesheet" href="./woofs/new/new.css" />
+</head>
+<body ng-app="woof">
+  <div class="container">
+    <h1 class="title">Woof</h1>
+  </div>
+
+  <nav class="nav">
+    <div class="container">
+      <ul class="nav__list">
+        <li
+            class="nav__list-item"
+            ui-sref-active="nav__list-item--active">
+          <a ui-sref="woof.new">New Woof</a>
+        </li>
+        <li
+            class="nav__list-item"
+            ui-sref-active="nav__list-item--active">
+          <a ui-sref="woof.index">All Woofs</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <ui-view></ui-view>
+  </div>
+
+  <script src="./node_modules/angular/angular.js"></script>
+  <script src="./node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="./node_modules/angular-local-storage/dist/angular-local-storage.min.js"></script>
+  <script src="./app.js"></script>
+  <script src="./woofs/woof.factory.js"></script>
+  <script src="./woofs/woofs.service.js"></script>
+  <script src="./woofs/list/woofs.controller.js"></script>
+  <script src="./woofs/new/new-woof.controller.js"></script>
+</body>
+</html>
