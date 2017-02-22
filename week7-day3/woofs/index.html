@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="woofApp">
+
+    <head>
+        <title>Woofs</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="./src/styles/main.css">
+        <link rel="stylesheet" href="./src/styles/list.css">
+        <link rel="stylesheet" href="./src/styles/new.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="title">Woof</h1>
+        </div>
+
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__list-item" ui-sref-active="nav__list-item--active">
+                        <a ui-sref="woofParent.newWoof">New Woof</a>
+                    </li>
+                    <li class="nav__list-item" ui-sref-active="nav__list-item--active">
+                        <a ui-sref="woofParent.listWoofs">All Woofs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <ui-view></ui-view>
+        </div>
+
+        <script src="./node_modules/angular/angular.js"></script>
+        <script src="./node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="./node_modules/angular-local-storage/dist/angular-local-storage.min.js"></script>
+        <script src="./src/js/app.js"></script>
+        <script src="./src/js/controllers/new-woof-controller.js"></script>
+        <script src="./src/js/services/local-storage-service.js"></script>
+        <script src="./src/js/controllers/list-controller.js"></script>
+        <script src="./src/js/services/star-service.js"></script>
+    </body>
+
+</html>
