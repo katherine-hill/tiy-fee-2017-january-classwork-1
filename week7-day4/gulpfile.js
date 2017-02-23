@@ -30,7 +30,8 @@ gulp.task('js', function() {
         .pipe(babel({
             presets: ['es2015']
         }))
-        .pipe(config.production ? concat('app.min.js') : util.noop())
+        // .pipe(config.production ? concat('app.min.js') : util.noop())
+        .pipe(concat('app.js'))
         .pipe(config.production ? uglify() : util.noop())
         .pipe(gulp.dest('./lib/js'));
 

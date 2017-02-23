@@ -24,6 +24,7 @@ h1 {
     li {
         background: #000;
         color: #ccc;
+        cursor: pointer;
         padding: $vspace $hspace;
         text-transform: uppercase;
         transition: all 0.5s ease;
