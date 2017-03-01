@@ -25,3 +25,4 @@ This repo was created to centralize all code examples built in class during the 
 - [Week 7 - Day 3](week7-day3) - Angular Woofs and Starting Five Update
 - [Week 7 - Day 4](week7-day4) - Angular Routing, Angular with Gulp, State Params
 - [Week 8 - Day 1](week8-day1) - Angular Directives and Controllers
+- [Week 8 - Day 3](week8-day3) - React Components, State, and More
