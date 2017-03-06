@@ -1,0 +1,40 @@
+<div>
+  <div class="filter">
+    <h3 class="filter__title">show:</h3>
+    <ul class="filter__list">
+      <li
+          class="filter__list-item"
+          ng-class="{'filter__list-item--active': woofFilter === 'all'}">
+        <a ui-sref="woof.index({ filter: 'all' })">all</a>
+      </li>
+      <li
+          class="filter__list-item"
+          ng-class="{'filter__list-item--active': woofFilter === 'starred'}">
+        <a ui-sref="woof.index({ filter: 'starred' })">starred</a>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="cards">
+    <li
+        class="card"
+        ng-repeat="woof in woofs | filter:woofFilters[woofFilter] | orderBy:'-'">
+      <div class="card__left">
+        <div class="card__text">{{woof.body}}</div>
+
+        <div class="card__star-count">
+          <ng-pluralize count="woof.starCount"
+             when="{'0': '0 stars',
+                    'one': '1 star',
+                    'other': '{} stars'}">
+        </div>
+      </div>
+      <div class="card__right">
+        <div
+            class="card__star"
+            ng-class="{'card__star--active': woof.starred}"
+            ng-click="toggleStar(woof)" />
+      </div>
+    </li>
+  </ul>
+</div>

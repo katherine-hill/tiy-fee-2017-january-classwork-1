@@ -1,0 +1,27 @@
+<div>
+    <div class="filter">
+        <h3 class="filter__title">show:</h3>
+        <ul class="filter__list">
+            <li class="filter__list-item" ng-class="{'filter__list-item--active': listCtrl.listFilter === 'all'}">
+                <a ui-sref="woofParent.listWoofs({ filter: 'all'})">all</a>
+            </li>
+            <li class="filter__list-item" ng-class="{'filter__list-item--active': listCtrl.listFilter === 'starred'}">
+                <a ui-sref="woofParent.listWoofs({ filter: 'starred'})">starred</a>
+            </li>
+        </ul>
+    </div>
+
+    <ul class="cards">
+        <li ng-repeat="woof in listCtrl.allWoofs | filter: listCtrl.filterObj[ listCtrl.listFilter ]" class="card">
+            <div class="card__left">
+                <div class="card__text">{{woof.body}}</div>
+
+                <div class="card__star-count">
+                </div>
+            </div>
+            <div class="card__right">
+                <div class="card__star" ng-class="{'card__star--active': woof.starred}" ng-click="listCtrl.toggleStar(woof)"></div>
+            </div>
+        </li>
+    </ul>
+</div>

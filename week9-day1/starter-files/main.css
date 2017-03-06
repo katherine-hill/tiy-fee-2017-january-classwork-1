@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css?family=Niconne|Raleway");
+
+/**
+ * Global Resets
+ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background: url(../images/home.png) no-repeat #000;
+    background-size: cover;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -webkit-backface-visibility: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+::-moz-selection {
+    color: #fff;
+    background: #D1A131;
+}
+::selection {
+    color: #fff;
+    background: #D1A131;
+}
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: 2px #D1A131 solid;
+}
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+ol,
+ul {
+    list-style: none;
+}
+a {
+    background: transparent;
+}
+.hidden {
+    display: none;
+}
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+main {
+    align-items: center;
+    display: flex;
+    height: calc(100vh - 3em);
+    justify-content: center;
+    width: 100%;
+}
+p {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 10px 0;
+}
+video {
+    height: 100vh;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+nav {
+    align-items: center;
+    align-self: flex-start;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    height: 3em;
+    justify-content: flex-start;
+    padding: 2px 15px 0;
+    width: 100%;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    border-bottom: 2px solid transparent;
+    color: #FBF4F4;
+    cursor: pointer;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: border .2s ease;
+}
+nav li a.active,
+nav li a:hover {
+    border-color: #D1A131;
+}
+nav li:first-child a {
+    border-bottom: 2px solid transparent;
+    color: #D1A131;
+}
+nav li:first-child:hover a {
+    border-bottom: 2px solid transparent;
+}
+nav li:first-child a span {
+    margin: 0 .5rem;
+}
+.home-card-container {
+    align-items: center;
+    align-self: center;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 405px;
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.75);
+    padding: 10px 15px;
+    width: 720px;
+}
+.home-card-container .card {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 405px;
+    width: 100%;
+}
+.home-card-container .card h1 {
+    border-bottom: 0.25px solid #666;
+    color: #fff;
+    font: 75px/80px "Niconne", cursive;
+}
+.home-card-container .card h1 span {
+    color: #ccc;
+    font: 50px/80px "Niconne", cursive;
+    margin: 0 1rem;
+}
+.home-card-container .card h2 {
+    color: #ccc;
+    font: 18px/50px "Raleway", sans-serif;
+    font-style: italic;
+}
+.home-card-container p {
+    color: #fff;
+    display: table;
+    font: 16px/35px 'Raleway', sans-serif;
+    white-space: nowrap;
+}
+.home-card-container p:after,
+.home-card-container p:before {
+    border-top: 1px solid #666;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 17.5px;
+    width: 45%;
+}
+.home-card-container p span {
+    display: inline-block;
+    padding: 0 15px;
+}
+.content-container {
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    color: #FBF4F4;
+    padding: 10px 15px;
+    width: 75%;
+}
+.content-container .inner-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 15px;
+}
+.content-container h1,
+.content-container a,
+.content-container a:visited,
+.content-container a:hover {
+    border-bottom: 1px solid #666;
+    color: #FBF4F4;
+    font: 20px/25px "Raleway", sans-serif;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+.content-container h1.active,
+.content-container a.active,
+.content-container a:visited.active,
+.content-container a:hover.active {
+    color: #D1A131;
+}
+.content-container h1 a,
+.content-container h1 a:hover,
+.content-container a a,
+.content-container a a:hover,
+.content-container a:visited a,
+.content-container a:visited a:hover,
+.content-container a:hover a,
+.content-container a:hover a:hover {
+    border: none;
+}
+.content-container h1 span,
+.content-container a span,
+.content-container a:visited span,
+.content-container a:hover span {
+    color: #666;
+    padding: 0 15px;
+}
+.content-container .row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0;
+}
+.content-container .column {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+.content-container img {
+    height: auto;
+    margin: 0 15px;
+    width: 320px;
+}
+.content-container blockquote {
+    background: rgba(102, 102, 102, 0.25);
+    font-size: 17px;
+    padding: 10px 15px;
+    text-align: center;
+}
+.content-container blockquote cite {
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+    text-align: right;
+}
+li p {
+    font-weight: bold;
+}
+li p span {
+    color: #ccc;
+    font-weight: normal;
+}
+form label {
+    display: block;
+    font-weight: bold;
+}
+form input {
+    display: block;
+    margin: 10px 0;
+    padding: 5px 7.5px;
+    width: 100%;
+}
+form input[type=submit] {
+    background: #D1A131;
+    border: 1px solid #666;
+    cursor: pointer;
+    line-height: 20px;
+    transition: background .25s ease;
+}
+form input[type=submit]:hover {
+    background: #be922a;
+}
+.column:first-child {
+    padding-left: 0;
+}
+.column:last-child {
+    padding-right: 0;
+}
+.current-reservations {
+    align-self: stretch;
+    border-left: 1px solid #666;
+    flex-grow: 1;
+}
+.sub-header {
+    border-bottom: 1px solid #666;
+    width: 100%;
+}
+.sub-header span {
+    font-weight: bold;
+}
+.loader {
+    display: inline-block;
+    height: 100px;
+    padding: 1em;
+    text-align: center;
+    vertical-align: top;
+    width: 20%;
+}
+.loader svg path,
+.loader svg rect {
+    fill: #D1A131;
+}
+
+/*# sourceMappingURL=lecter-bistro.css.map */

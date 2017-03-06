@@ -1,0 +1,183 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  font: 16px/1.25 "Arsenal", sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+::-moz-selection {
+  color: #fff;
+  background: #2c3e50; }
+
+::selection {
+  color: #fff;
+  background: #2c3e50; }
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Pavanam', sans-serif;
+  padding: 25px;
+  overflow: hidden; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.ghost-container {
+  float: left;
+  margin: 25px; }
+  .ghost-container .ghost {
+    background: url("http://www.danyuschick.com/codepen/pacman/pacman-weyes.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    height: 75px;
+    left: 0;
+    margin: 0 auto;
+    outline: 1px solid transparent;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    transition: all 2s ease;
+    transform-origin: center;
+    transform: scale(1);
+    width: 75px; }
+    .ghost-container .ghost.float {
+      animation: float 2s ease-in-out; }
+    .ghost-container .ghost.chase {
+      animation: chase 5s ease-in-out;
+      z-index: -1; }
+    .ghost-container .ghost.lookout {
+      animation: lookout 1.5s ease; }
+    .ghost-container .ghost.blink {
+      animation: blink 5s linear; }
+    .ghost-container .ghost.poof {
+      animation: poof 5s ease-in-out; }
+  .ghost-container p {
+    margin: 2px 0;
+    text-align: center; }
+    .ghost-container p:first-of-type {
+      font-weight: bold;
+      margin-top: 10px;
+      text-transform: uppercase; }
+
+@keyframes float {
+  25% {
+    top: -35px; }
+  50% {
+    top: -10px; }
+  75% {
+    top: -25px; } }
+@keyframes chase {
+  50% {
+    left: -80vw; }
+  50.001% {
+    left: 80vw; } }
+@keyframes lookout {
+  15% {
+    transform: rotateY(180deg); }
+  25% {
+    transform: rotateY(180deg) rotate(20deg); }
+  35% {
+    transform: rotateY(180deg) rotate(10deg); }
+  50%,
+    90% {
+    transform: rotateY(180deg) rotate(0deg); } }
+@keyframes blink {
+  0%,
+    80%,
+    85%,
+    92%,
+    97%,
+    99% {
+    background-color: #2800FF; }
+  100%,
+    81%,
+    88%,
+    95%,
+    98% {
+    background-color: initial; } }
+@keyframes poof {
+  10% {
+    transform: scale(1.25);
+    opacity: 1; }
+  15%,
+    80% {
+    transform: scale(0);
+    opacity: 0; }
+  85% {
+    transform: scale(1.25);
+    opacity: 1; }
+  90% {
+    transform: scale(0.9); }
+  95% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+.has-spacer:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 1px;
+  margin: 0.25rem 0;
+  width: 100%; }
+
+.is-hidden {
+  display: none; }
+
+.is-flex {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.is-strong {
+  font-weight: 700; }
+
+.is-centered {
+  text-align: center; }
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,26 @@
+<div class="new-woof">
+  <form
+      novalidate
+      name="newWoofForm"
+      class="new-woof__form"
+      ng-submit="newWoofForm.$valid && create()">
+    <div>
+      <span
+          class="new-woof__count"
+          ng-class="{'new-woof__count--invalid': newWoofForm.woofText.$error.maxlength}">
+        {{newWoofForm.woofText.$viewValue.length || 0}}
+      </span>
+      /
+      {{maxTextLength}}
+    </div>
+    <textarea
+        name="woofText"
+        class="new-woof__text"
+        placeholder="Send a woof"
+        ng-required="true"
+        ng-model="woofText"
+        ng-maxlength="maxTextLength">
+    </textarea>
+    <button class="new-woof__submit" ng-disabled="newWoofForm.$invalid">send</button>
+  </form>
+</div>

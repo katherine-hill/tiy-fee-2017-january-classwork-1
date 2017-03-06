@@ -1,0 +1,71 @@
+.filter {
+  line-height: 2.5em;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.filter__title {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.filter__list {
+  display: inline-block;
+}
+
+.filter__list-item {
+  display: inline-block;
+  margin-right: 1rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  opacity: 0.35;
+  font-weight: 500;
+}
+
+.filter__list-item--active {
+  opacity: 1;
+}
+
+.cards {
+
+}
+
+.card {
+  display: flex;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #8C8C8C;
+  color: #D7D7D7;
+}
+
+.card__left {
+  flex: 4;
+}
+
+.card__right {
+  flex: 1;
+}
+
+.card__text {
+  margin-bottom: 2em;
+  font-size: 2em;
+}
+
+.card__star-count {
+  font-size: 1em;
+}
+
+.card__star {
+  cursor: pointer;
+  background-image: url('./star-inactive.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2em;
+}
+
+.card__star--active {
+  background-image: url('./star-active.svg');
+}

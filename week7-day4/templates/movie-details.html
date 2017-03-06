@@ -1,0 +1,11 @@
+<section class="movie-full-container">
+    <img ng-src="http://danyuschick.com/31-nights-of-horror/assets/images/wallpapers/{{detailsCtrl.movie.image}}" alt="{{detailsCtrl.movie.title}}">
+    <div class="movie-preview">
+        <img ng-src="http://danyuschick.com/31-nights-of-horror/assets/images/posters/{{detailsCtrl.movie.image}}" alt="{{detailsCtrl.movie.title}}">
+        <div class="preview-details-container">
+            <h2>{{detailsCtrl.movie.title}} {{detailsCtrl.movie.year}}</h2>
+            <p>{{detailsCtrl.movie.summary}}</p>
+            <p>View on: <a href="http://www.imdb.com/title/{{detailsCtrl.movie.imdb}}" target="_blank">IMDB</a></p>
+        </div>
+    </div>
+</section>

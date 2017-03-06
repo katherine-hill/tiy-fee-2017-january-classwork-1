@@ -1,0 +1,40 @@
+.new-woof {
+  margin-top: 1rem;
+}
+
+.new-woof__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.new-woof__count--invalid {
+  color: #E9914A;
+}
+
+.new-woof__text {
+  margin-bottom: 1rem;
+  width: 100%;
+  min-height: 10em;
+  padding: 1rem;
+}
+
+.new-woof__submit {
+  cursor: pointer;
+  border: none;
+  background-color: #4B4B4B;
+  padding: 0.5rem 1.5rem;
+  opacity: 0.55;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.new-woof__submit:disabled {
+  cursor: not-allowed;
+}
+
+.new-woof__submit:hover {
+  background-color: #292929;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="ToDontApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Cross-Controller Content</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300|Open+Sans:400">
+        <link rel="stylesheet" href="lib/styles/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container" ng-controller="AddController">
+                <h1>To Don't List</h1>
+                <form autocomplete="off" ng-submit="addItem()">
+                    <input type="text" name="nontask" ng-model="item.task" required>
+                    <input type="submit" value="Add Item">
+                </form>
+                <p>Amount of things I won't be doing: {{allItems.length}}</p>
+            </div>
+
+            <div class="list-container" ng-controller="ListController">
+                <p ng-hide="getItems().length">You have not yet added things to not do to your list of things not to do.</p>
+                <ul ng-show="getItems().length">
+                    <list-item ng-repeat="item in allItems"></list-item>
+                </ul>
+            </div>
+        </div>
+        <script src="lib/js/vendor/vendor.min.js"></script>
+        <script src="lib/js/app.js"></script>
+    </body>
+</html>

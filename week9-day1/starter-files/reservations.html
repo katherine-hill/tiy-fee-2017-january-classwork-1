@@ -1,0 +1,31 @@
+<div className='container'>
+    <main>
+        <section className="content-container">
+            <section className="inner-container">
+                <h1>Reservations</h1>
+                <div className="row">
+                    <div className="column">
+                        <p>Make a reservation so we know to leave room for you.</p>
+                        <form name="reservation-form">
+                            <fieldset>
+                                <legend className="hidden">Reserve</legend>
+
+                                <input type="submit" value="Make Reservation" />
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div className="column current-reservations">
+                        <p className="sub-header">Current Reservations</p>
+                        <ul>
+                            <li>
+                                <p>Name -
+                                    <span>the date - Time - Size People</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+</div>
